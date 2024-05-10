@@ -1,0 +1,19 @@
+.image img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 10px solid  #f4ebf2;
+    position: relative;
+    top: 0;
+    left: 0;
+   
+  
+
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  

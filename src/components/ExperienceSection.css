@@ -1,0 +1,75 @@
+.experience-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.experience {
+  width: 90%; /* Adjust width of the cards */
+  max-width: 1000px; /* Increase maximum width for laptop screens */
+  padding: 20px;
+  border: 1px solid #7f1c63;
+  border-radius: 8px;
+  margin: 20px auto; /* Center horizontally */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a box shadow for a card effect */
+  background: linear-gradient(to top right, #5f3670 10%, #deb4de 100%);
+  transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+.experience:hover {
+  transform: scale(1.05); /* Scale up by 5% on hover */
+}
+
+.location {
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.position {
+  font-weight: bold;
+}
+
+.duration {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.image-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.highlightable-image {
+  width: 100%; /* Ensure image takes full width */
+  max-width: 400px; /* Adjust according to your image size */
+  transition: filter 0.1s ease;
+}
+
+.highlightable-image:hover {
+  filter: brightness(120%);
+  transform: scale(1.1) translate(5px, -5px);
+}
+
+/* Media queries for adjusting text size on larger screens */
+@media screen and (min-width: 1024px) {
+  .experience h3 {
+    font-size: 1.5rem; /* Adjust font size for company names on larger screens */
+  }
+
+  .experience p {
+    font-size: 1.1rem; /* Adjust font size for other text on larger screens */
+  }
+
+  .experience .duration {
+    font-size: 1rem; /* Adjust font size for duration on larger screens */
+  }
+}

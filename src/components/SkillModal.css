@@ -1,0 +1,123 @@
+/* SkillModal.css */
+
+.skills-container {
+  text-align: center;
+  margin-top: 20px;
+ 
+}
+.skills-modal{
+  width: 70%; /* Adjust width of the cards */
+  padding: 20px;
+  border: 1px solid #7f1c63;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a box shadow for a card effect */
+  /*background-color: #490e3c; /* Add background color */
+  background: linear-gradient(to top right, #5f3670 10%, #deb4de 100%);
+  align-items: center; 
+  position: relative;
+  top:30%;
+  left: 15%
+}
+
+.skills-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.skills-container button {
+  background-color: #7817c1; /* Blue button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+.skills-modal button{
+
+  background-color: #7817c1; /* Blue button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+.skills-container button:hover {
+  background-color: #3c0567; /* Darker blue on hover */
+}
+
+.modal-content {
+  width: 70%; /* Adjust width of the modal */
+  padding: 20px;
+  border: 1px solid #7f1c63;
+  border-radius: 8px;
+  position: relative; /* Use fixed positioning */
+  top: 50%; /* Position the top edge at the vertical center */
+  left: 50%; /* Position the left edge at the horizontal center */
+  /*transform: translate(-110%, -110%); /* Use transform to center the modal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a box shadow for a card effect */
+  /*background-color: #490e3c; /* Add background color */
+  background: linear-gradient(to top right, #5f3670 10%, #deb4de 100%);
+}
+.modal-backdrop {
+  background-color: rgba(31, 27, 27, 0) !important;
+}
+
+.modal-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.modal-content button {
+  background-color: #4713e4; /* Blue button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  margin-top: 20px;
+}
+
+.modal-content button:hover {
+  background-color: #38078c; /* Darker blue on hover */
+}
+/* SkillModal.css */
+
+/* Other styles for modal content, container, etc. */
+
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.skills-table th, .skills-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.skills-table th {
+  /*background-color: #472545;*/
+  background: linear-gradient(to top right, #A515E8 10%, #660066 100%);
+}
+
+.body-scroll-lock {
+  overflow: hidden;
+}

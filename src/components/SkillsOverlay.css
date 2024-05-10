@@ -1,0 +1,109 @@
+body {
+    font-family: 'Lato', sans-serif;
+  }
+.skills-container {
+    position: relative;
+    z-index: 1050; /* High z-index to ensure it's on top */
+
+  }
+  .skills-container button{
+    background-color: #7817c1; /* Blue button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 50%;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    position: relative;
+  }
+  .skills-menu {
+    position: fixed;
+    top: 0;
+    right: -50%; /* Initially off-screen */
+    height: 100%;
+    width: 50%; /* Adjust width as needed */
+    background-color: rgba(0,0,0, 0.9);
+    transition: right 0.3s ease;
+    z-index: 1050; 
+  }
+  
+  .skills-menu.open {
+    right: 0;
+  }
+
+.skills-menu th,
+.skills-menu td {
+  font-size: 16px; /* Default font size */
+  border: 1px solid #ddd; /* Add border style */
+  padding: 8px; /* Add padding to th/td elements */
+}
+  
+  /* Styles for your menu content */
+  .skills-menu h2 {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .skills-table {
+    padding-top: 50%;
+    margin: 20px;
+    margin-top: 30%;
+    border-collapse: collapse; /* Ensure borders collapse properly */
+    
+  }
+  
+  .skills-menu button {
+    margin: 20px;
+  }
+  
+  /* Body scroll lock */
+  .body-scroll-lock {
+    overflow: hidden;
+  }
+  /* Backdrop styles */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1040; /* Just below the modal */
+    display: none; /* Hide by default */
+  }
+  
+  /* Show the backdrop when menu is open */
+  .backdrop.open {
+    display: block;
+    
+  }
+  .backdrop.open {
+    pointer-events: none;
+}
+  
+
+
+  /* Responsive font sizes */
+@media only screen and (max-width: 600px) {
+    .skills-menu th,
+    .skills-menu td {
+      font-size: 14px; /* Small screen font size */
+    }
+  }
+  
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .skills-menu th,
+    .skills-menu td {
+      font-size: 18px; /* Medium screen font size */
+    }
+  }
+  
+  @media only screen and (min-width: 1025px) {
+    .skills-menu th,
+    .skills-menu td {
+      font-size: 20px; /* Large screen font size */
+    }
+  }
+  

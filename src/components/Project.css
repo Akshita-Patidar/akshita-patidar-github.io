@@ -1,0 +1,12 @@
+.nav-pills {
+  display: flex;
+  justify-content: space-around; /* This will distribute space evenly */
+}
+
+.nav-pills .nav-item {
+  flex: 1; /* This will make each nav item take up equal width */
+}
+
+.nav-pills .nav-link {
+  text-align: center; /* This centers the text in the nav link */
+}

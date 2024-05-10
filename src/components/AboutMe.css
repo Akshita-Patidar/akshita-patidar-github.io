@@ -1,0 +1,79 @@
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 1;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.image {
+    flex: 0 0 25%;
+    max-width: 25%;
+    height: auto;
+    border: 5px solid #fff;
+    transition: transform 0.3s ease;
+}
+
+.summary {
+    flex: 0 0 45%;
+    max-width: 45%;
+    height: auto;
+    transition: transform 0.3s ease;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.image:hover,
+.summary:hover {
+    transform: scale(1.05);
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.summary {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.summary-background {
+    background: linear-gradient(to top right, #5f3670 10%, #deb4de 100%);
+    color: #fefbfb;
+    padding: 20px;
+}
+
+/* Media queries for responsive design */
+
+/* Laptop */
+@media (max-width: 1024px) {
+    .image,
+    .summary {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .image,
+    .summary {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .image,
+    .summary {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
