@@ -1,5 +1,5 @@
 import React from 'react';
-import Pic from '../assets/img/Pic.jpg'; // Import your photo here
+import Pic from '../assets/img/profile.jpg'; // Import your photo here
 import "./AboutMe.css"
 
 const AboutMe = () => {
@@ -9,7 +9,7 @@ const AboutMe = () => {
       <div className="image">
         <img src={Pic} alt="Profile Picture" />
       </div>
-      <div className="summary summary-background" style={{ fontSize :'1.3em'  }}>
+      <div className="summary summary-background" style={{ fontSize :'0.4cm'  }}>
         <h1>About Me</h1>
        
         <ul>
