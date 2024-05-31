@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Education.css"
 import csuf from "../assets/img/csuf.webp"
-import SVVV from "../assets/img/SVVV.jpg"
+import svvv from "../assets/img/svvv.jpg"
 
 const EducationCard = () => {
   return (
@@ -19,7 +19,7 @@ const EducationCard = () => {
     </div>
 
     <div className="card" >
-      <img src={SVVV} alt="Profile Image" />
+      <img src={svvv} alt="Profile Image" />
       <div className="details">
         
         <h2>Degree: Bachelor of Technology in Information Technology</h2>
