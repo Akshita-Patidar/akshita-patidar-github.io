@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Education.css"
 import csuf from "../assets/img/csuf.webp"
-import svvv from "../assets/img/svvv.jpg"
+import svvv from "../assets/img/svvv.jpeg"
 
 const EducationCard = () => {
   return (
