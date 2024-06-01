@@ -23,7 +23,7 @@ export const SkillModal = () => {
 
   return (
     <div className="skills-container">
-      <button onClick={toggleMenu}>Click To View All kills</button>
+      <button onClick={toggleMenu}>Click To View All Skills</button>
       <div className={`skills-menu ${menuOpen ? 'open' : ''}`}>
         <h2>Skills</h2>
         <table className="skills-table">
